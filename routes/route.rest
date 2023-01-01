@@ -1,0 +1,27 @@
+
+GET   http://localhost:2323/books
+
+###
+GET   http://localhost:2323/books/63b1bd7fc0e46666738fbb3d
+
+###
+POST http://localhost:2323/books
+Content-Type: application/json
+//Insert method
+{
+    "name": "It",
+    "author": "Stephen King",
+    "releaseDate": "10/2/1985",
+    "rating": 9
+}
+###
+
+DELETE   http://localhost:2323/books/63b1bd7fc0e46666738fbb3e
+
+### 
+PATCH   http://localhost:2323/books/63b1c5c98e88f515afa18807
+ Content-Type: application/json
+
+ {
+    "name": "The Institute"
+ } 
